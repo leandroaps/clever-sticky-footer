@@ -1,0 +1,36 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+#root {
+  flex: 1;
+  > footer {
+    position: sticky;
+    top: 100vh;
+  }
+}
+
+main {
+  padding: 0 20px;
+  flex: 1;
+}
+
+header,
+footer {
+  padding: 20px;
+  background-color: #eee;
+}
